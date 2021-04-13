@@ -4,6 +4,28 @@
 	
 <beans>
 	<!-- new DTO, DAO, ..와 동일 -->
+	<bean id="characterManager2" class="com.spring.di.CharacterManager2"></bean>
 	<bean id="warrior" class="com.spring.di.Warrior"></bean>
+	
+	<!-- 
+		property태그의 name, value 속성을 이요해서 멤버변수의 값을 명시
+		name속성에는 setter를 작성, 생김새는 변수와 같지만 setter가 없으면 인식X
+	 -->
+	<bean id="hunter" class="com.spring.di.Hunter">
+		<!-- property의 name(변수명)은 반드시 bean에서 가져온
+			 class 내부의 변수명과 같아야 함 -->
+		<property name="occupation" value="승급사냥꾼2" />
+		<property name="level" value="30" />
+	</bean>
+	
+	<bean id="wizard1" class="com.spring.di.Wizard">
+		<property name="occupation" value="승급마법사2-1" />
+		<property name="level" value="30" />
+	</bean>
+	
+	<bean id="wizard2" class="com.spring.di.Wizard">
+		<property name="occupation" value="승급마법사2-2" />
+		<property name="level" value="30" />
+	</bean>
 
 </beans>

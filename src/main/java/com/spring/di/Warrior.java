@@ -11,9 +11,6 @@ public class Warrior {
 	
 	private String occupation = "전사";
 	private int level = 1;
-	private int power = 10;
-	private int dex = 5;
-	private int mana = 5;
 	
 	public String getOccupation() {
 		return occupation;
@@ -26,24 +23,6 @@ public class Warrior {
 	}
 	public void setLevel(int level) {
 		this.level = level;
-	}
-	public int getPower() {
-		return power;
-	}
-	public void setPower(int power) {
-		this.power = power;
-	}
-	public int getDex() {
-		return dex;
-	}
-	public void setDex(int dex) {
-		this.dex = dex;
-	}
-	public int getMana() {
-		return mana;
-	}
-	public void setMana(int mana) {
-		this.mana = mana;
 	}
 
 }
