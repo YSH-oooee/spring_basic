@@ -22,6 +22,9 @@ public class DI_Ex03 {
 	@Autowired
 	DiSampleClass2 diSampleClass2_2;
 	
+	@Autowired
+	DiSampleClass3 diSampleClass3;
+	
 	@RequestMapping(value="/diEx03", method = RequestMethod.GET)
 	public String mainString() {
 		

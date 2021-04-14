@@ -50,7 +50,6 @@
 		<beans:constructor-arg ref="diSampleClass1_2"/>
 	</beans:bean>
 	
-	<!-- 예시 -->
 	<beans:bean id="diSampleClass3" class="com.spring.di.DiSampleClass3">
 		
 		<beans:property name="testList">
@@ -63,43 +62,51 @@
 		
 		<beans:property name="testMap">
 			<beans:map>
+			
 				<beans:entry>
 					<beans:key>
 						<beans:value>key1</beans:value>
 					</beans:key>
 					<beans:value>val1</beans:value>
 				</beans:entry>
+				
 				<beans:entry>
 					<beans:key>
 						<beans:value>key2</beans:value>
 					</beans:key>
 					<beans:value>val2</beans:value>
 				</beans:entry>
-			</beans:map>
+				
+			</beans:map>			
 		</beans:property>
 		
 		<beans:property name="testMapObj">
 			<beans:map>
+			
 				<beans:entry>
 					<beans:key>
 						<beans:value>Obj1</beans:value>
 					</beans:key>
-					<beans:ref bean="diSampleClass1_1"></beans:ref>
+					<beans:ref bean="diSampleClass1_1" />
 				</beans:entry>
+				
 				<beans:entry>
 					<beans:key>
 						<beans:value>Obj2</beans:value>
 					</beans:key>
-					<beans:ref bean="diSampleClass1_2"></beans:ref>
+					<beans:ref bean="diSampleClass1_2" />
 				</beans:entry>
+				
 				<beans:entry>
 					<beans:key>
 						<beans:value>Obj3</beans:value>
 					</beans:key>
-					<beans:ref bean="resourceTester"></beans:ref>
+					<beans:ref bean="resourceTester" />
 				</beans:entry>
+				
 			</beans:map>
 		</beans:property>
+		
 	</beans:bean> 
 	
 </beans:beans>

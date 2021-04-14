@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 // 컬렉션 프레임워크 주입 예시
-
 public class DiSampleClass3 {
 
 	private List<String> testList;

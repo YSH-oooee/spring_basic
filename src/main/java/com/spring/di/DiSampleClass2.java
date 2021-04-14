@@ -19,6 +19,4 @@ public class DiSampleClass2 {
 		diSampleClass1.printInfo();
 	}
 	
-	
-	
 }
